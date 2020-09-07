@@ -1,0 +1,85 @@
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkkhaki;
+}
+/* Float the list items side by side */
+ul.topnav li {
+    float: left;
+}
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: olivedrab;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+ul.topnav li a:hover {
+    box-shadow: 0 5px 15px khaki;
+	transition: opacity 0.3s ease-in-out;
+}
+/* Hide the list item that contains the link that should
+   open and close the topnav on small screens */
+ul.topnav li.icon {
+	display: none;
+}
+
+.header-title {
+	padding: 2px 16px;
+	text-align: center;
+	color: olivedrab;
+}
+
+ul.ProfileList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Float the list items side by side */
+ul.ProfileList li {
+    float: left;
+}
+/* Style the links inside the list items */
+ul.ProfileList li {
+    display: inline-block;
+    color: olivedrab;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+ul.ProfileList li :hover {
+    box-shadow: 0 5px 15px khaki;
+	transition: opacity 0.3s ease-in-out;
+}
+/* Hide the list item that contains the link that should
+   open and close the topnav on small screens */
+ul.ProfileList li.icon {
+	display: none;
+}
+
+.bg_img {
+    background-color: darkkhaki;
+    background-image: url('/static/images/fireklr.png');
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
