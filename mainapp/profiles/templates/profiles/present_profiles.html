@@ -8,17 +8,18 @@
 
 
 <div class="admin_panel">
-    <form name="profileForm" method="POST" action="../details/">
+    <form name="ProfileForm" method="POST" action="../details/">
         <table>
             {% csrf_token %}
             {{ form.non_field_errors }}
-            {{ form.as.table }}
+            {{ form.as_table }}
         </table>
         <div class="frmBtn_container">
-            <ul>
-                <li><a href="../{{ form.pk }}delete/">DELETE</a></li>
-                <li><a href="{% url 'admin_contacts' %}">CANCEL</a></li>
-            </ul>
+            <input type="Submit">
+            <div class="frmBtn_container">
+                <button class="btn"><a href="../{{ form.pk }}delete/">DELETE</a></button>
+                <button class="btn"><a href="{% url 'admin_contacts' %}">CANCEL</a></button>
+            </div>
         </div>
 
     </form>

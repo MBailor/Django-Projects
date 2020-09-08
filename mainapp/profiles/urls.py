@@ -7,4 +7,7 @@ from . import views
 urlpatterns = [
     path('admin_contacts/', views.admin_contacts, name="admin_contacts"),
     path('<int:pk>/details/', views.details, name="details"),
+    path('<int:pk>/delete/', views.delete, name="delete"),
+    path('confirmDelete/', views.confirmed, name="confirmed"),
+    path('createRecord/', views.createRecord, name="createRecord"),
 ]

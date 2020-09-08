@@ -11,7 +11,7 @@ TYPE_PREFIX = [
 
 
 class Profiles(models.Model):
-    type = models.CharField(max_length=60, null=False, blank=True, choices=TYPE_PREFIX)
+    Type = models.CharField(max_length=60, null=False, blank=True, choices=TYPE_PREFIX)
     FirstName = models.CharField(max_length=60, default="", blank=True, null=False)
     LastName = models.CharField(max_length=60, default="", blank=True, null=False)
     Email = models.CharField(max_length=120, default="", blank=True, null=False)

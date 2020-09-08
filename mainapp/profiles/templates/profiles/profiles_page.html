@@ -7,7 +7,7 @@
 {% block content %}
 
  <div class="contact_panel">
-    <form name="contactForm" method="POST" action="">
+    <form name="ProfileForm" method="POST" action="">
         <div class="formObject">
             {% csrf_token %}
             <label for="menu_id">Who Should We Contact?</label>
@@ -17,7 +17,7 @@
             {% endfor %}
             </select>
             <div class="fromBtn_container">
-                <a href=""><button type="button" class="btn">Select Contact</button></a>
+                <a href="{% url 'createRecord' %}"><button type="button" class="btn">Create Contact</button></a>
                 <a href="{% url 'home' %}"><button type="button" class="btn">Close</button></a>
             </div>
         </div>
