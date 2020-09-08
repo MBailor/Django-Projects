@@ -58,3 +58,6 @@ def createRecord(request):
         'form': form,
     }
     return render(request, 'profiles/createRecord.html', context)
+
+def about(request):
+    return render(request, 'profiles/about.html', { 'about': about })
